@@ -19,6 +19,23 @@ a {
 a:hover {
 	color:#000;
 }
+
+.list-unstyled{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.list-inline > li {
+	display: inline-block;
+}
+
+.img-responsive{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 header {
 	/*Скрыть float*/
 	position:fixed;
@@ -36,22 +53,19 @@ header > .logo {
 	width: 20%;
 
 }
+
+
 header > nav {
 	width: 80%;
 }
-header > nav > ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-header > nav > ul > li {
-	display: inline-block;
-}
+
+
 header > nav > ul > li > a {
 	font-size: 16px;
 	text-transform: uppercase;
 	line-height: 80px;
 }
+
 section, #home {
 	height:100%;
 
@@ -68,24 +82,26 @@ section, #home {
 .socials {
 	position:absolute;
 	bottom:0;
-	padding:0;
 	width:100%;
 	height:50%;
 	text-align:center;
-	margin:0;
+	/*padding:0;*/
+	/*margin:0;*/
 	background:rgba(255, 255, 255, 0.5);
 }
 
 .socials>li {
-	display:inline-block;
 	border: 2px solid #687781;
-  	border-radius: 100%;
-  	padding:0;
-  	margin:20px 10px;
+	width: 111px;
+	height: 111px;
+	border-radius: 50%;
+	padding:0;
+	margin:20px 10px;
 }
-.socials>li>a {
-	display:block;
-	padding:50px;
+.icons {
+	line-height: 111px;
+	/*display:block;
+	padding:50px;*/
 }
 #work {
 	height:100%;
@@ -95,12 +111,31 @@ section, #home {
 .portfolio {
 	position:absolute;
 	top:-100px;
+	width: 70%;
 	/*font-size:0;
 	line-height:0;*/
 	
 	}
-.portfolio li{
-	display:inline-block;
-	padding:0;
-	margin:0;
+
+.portfolio>li{
+	float: left;
+	display:list-item;
+	/*padding:0;
+	margin:0;*/
+	width: 33.3%;
 }
+
+.portfolio>li:nth-child(3n+1){
+	clear: both;
+}
+
+.portfolio li > a{
+	font-size: 0;
+	line-height: 0;
+}
+
+.content{
+	width: 70%;
+	margin: 0 auto;
+}
+
