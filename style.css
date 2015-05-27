@@ -83,7 +83,7 @@ section, #home {
 	position:absolute;
 	bottom:0;
 	width:100%;
-	height:50%;
+	height:30%;
 	text-align:center;
 	/*padding:0;*/
 	/*margin:0;*/
@@ -92,32 +92,36 @@ section, #home {
 
 .socials>li, .load_more {
 	border: 2px solid #687781;
-	width: 111px;
-	height: 111px;
+	width: 85px;
+	height: 85px;
 	border-radius: 50%;
 	padding:0;
 	margin:20px 10px;
 }
 .icons {
-	line-height: 111px;
+	line-height: 85px;
 	/*display:block;
 	padding:50px;*/
 }
 #work {
-	height:180%;
+	height:100%;
 	position:relative;
 
 }
 .portfolio {
 	position:absolute;
-	top:-100px;
-	width: 70%;
+	top:-10%;
+	width: 100%;
 	/*font-size:0;
 	line-height:0;*/
 	
 	}
 
-.portfolio>li{
+.portfolio ul{
+	overflow: hidden;
+}
+
+.portfolio ul>li{
 	float: left;
 	display:list-item;
 	/*padding:0;
@@ -125,11 +129,11 @@ section, #home {
 	width: 33.3%;
 }
 
-.portfolio>li:nth-child(3n+1){
+.portfolio ul>li:nth-child(3n+1){
 	clear: both;
 }
 
-.portfolio li > a{
+.portfolio ul>li > a{
 	font-size: 0;
 	line-height: 0;
 }
@@ -140,11 +144,12 @@ section, #home {
 	
 }
 .load_more {
-	position: absolute;
-	bottom: 0;
+	/*position: absolute;*/
+	/*bottom: 0;*/
 	text-align:center;
-	left: 50%;
-  	margin-left: -55.5px;
+	margin: 30px auto;
+	/*left: 50%;*/
+	/*margin-left: -55.5px;*/
 }
 
 
