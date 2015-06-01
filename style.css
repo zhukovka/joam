@@ -169,6 +169,10 @@ section, #home {
 	/*left: 50%;*/
 	/*margin-left: -55.5px;*/
 }
+
+.gay img{
+	display: block;
+}
 #testimonials{
 	background:url(images/background.jpg);
 	background-repeat:no-repeat;
@@ -287,13 +291,31 @@ img{
 	height:100%;
 
 }
-.info>* {
-	
+.info>.table-cell-50 {
+	vertical-align: top;
+
 }
+.info-photos{
+	height: 50%;
+}
+
+.info-photo{
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.info-photo:first-child{
+	background-image: url(images/about_me_2.jpg);
+}
+.info-photo:last-child{
+	background-image: url(images/about_me_3.jpg);
+}
+
 .me {
 	border:2px solid #F7F7F7;
 	/*width: 45%;*/
-  height: 40%;
+  height: 50%;
+  overflow: hidden;
   padding:5px 20px;
   position:relative;
 }
