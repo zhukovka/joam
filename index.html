@@ -2,18 +2,20 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Joam</title>
+	<link rel="stylesheet" href="responsive-nav.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
-
+	<script src="responsive-nav.min.js"></script>
 </head>
 <body>
 
 <!-- Joam Главная Работы Обо мне Контакты -->
 <header>
 	<div class="logo"><a href=""><img src="images/joam.png" alt=""></a></div>
-	<nav>
+	<nav class="nav-collapse">
 		<ul class="list-unstyled list-inline">
 			<li><a href="">home</a></li>
 			<li><a href="">work</a></li>
@@ -75,17 +77,17 @@
 	</article>
 	<article id="events">
 		<div class="content cf">
-			<div class="social column-33">
+			<div class="social column_xs column-33">
 				<a href="" class="icons fa fa-4x fa-star-o"></a>
 				<h3>Social events</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum hic enim odio, officiis asperiores! Deserunt, esse, dolores.</p>
 			</div>
-			<div class="life column-33">	
+			<div class="life column_xs column-33">	
 				<a href="" class="icons fa fa-4x fa-leaf"></a>
 				<h3>Nature&Animal life</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum hic enim odio, officiis asperiores! Deserunt, esse, dolores.</p>
 			</div>
-			<div class="sport column-33">
+			<div class="sport column_xs column-33">
 				<a href="" class="icons fa fa-4x fa-futbol-o"></a>
 				<h3>Sport events</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum hic enim odio, officiis asperiores! Deserunt, esse, dolores.</p>
@@ -94,14 +96,14 @@
 	</article>
 	<article id="about" class="content">
 	<div class="info table-view">
-		<div class="table-cell-50">
+		<div class="column_xs table-cell-50">
 			<div class="gay">
 				<a href="">
 					<img src="images/about_me_1.jpg" alt="">
 				</a>
 			</div>
 		</div>
-		<div class="table-cell-50">
+		<div class="column_xs table-cell-50">
 			<div class="me">
 				<h3>About me</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis officia possimus? Reiciendis ipsam quos nostrum delectus veritatis hic tenetur.</p>
@@ -131,22 +133,22 @@
 			<div class="divider"><i class="fa fa-line-chart"></i></div>
 			<!-- <img class="something" src="images/something.png" alt=""> -->
 			<div class="cf">
-				<div class="blocks column-25">
+				<div class="blocks column_xs-50 column-25">
 					<a href="" class="icons fa fa-3x fa-camera"></a>
 						<h2>3200</h2>
 						<p>hours of work</p>
 				</div>
-				<div class="blocks column-25">
+				<div class="blocks column_xs-50 column-25">
 					<a href="" class="icons fa fa-3x fa-user"></a>
 						<h2>120</h2>
 						<p>satisfiet clients</p>
 				</div>
-				<div class="blocks column-25">
+				<div class="blocks column_xs-50 column-25">
 					<a href="" class="icons fa fa-3x fa-picture-o"></a>
 						<h2>36</h2>
 						<p>project delivered</p>
 				</div>
-				<div class="blocks column-25">
+				<div class="blocks column_xs-50 column-25">
 					<a href="" class="icons fa fa-3x fa-paper-plane-o"></a>
 						<h2>12</h2>
 						<p>country visited</p>
@@ -187,11 +189,11 @@
 	</article>
 	<article id="sendme" class="content">
 		<div class="forma table-view">
-			<div class="image_form table-cell-50">
+			<div class="image_form column_xs table-cell-50">
 				<img src="images/contact_form.jpg" alt="">
 			</div>
 			
-			<div class="message table-cell-50">
+			<div class="message column_xs table-cell-50">
 				<h3>Send me a massage</h3>
 
 				<form action="URL" method="post" name="form1">
@@ -227,6 +229,9 @@
 	</footer>
 </section>
 
+<script>
+  var nav = responsiveNav(".nav-collapse");
+</script>
 	
 </body>
 
